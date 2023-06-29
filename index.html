@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/home.css" />
+    <script src="./scripts/calculation.js"></script>
     <title>Salary Slip</title>
 </head>
 
 <body>
     <h1>Salary Calculator</h1>
-    <div class="outer">
+    <div class="outer--first">
         <p>Enter gross salary</p>
         <input type="number" id="gross-salary" />
     </div>
@@ -18,26 +19,26 @@
         <h2>Additions in Dollars:</h2>
         <div class="inner">
             <p>Bonus $</p>
-            <input type="number" id="gross-salary" />
+            <input type="number" id="bonus" />
         </div>
         <div class="inner">
             <p>Allowance $</p>
-            <input type="number" id="gross-salary" />
+            <input type="number" id="allowance" />
         </div>
     </div>
     <div class="outer">
         <h2>Deductions in Percentage:</h2>
         <div class="inner">
             <p>Income Tax %</p>
-            <input type="number" id="gross-salary" />
+            <input type="number" id="income-tax" />
         </div>
         <div class="inner">
             <p>Employment Insurance %</p>
-            <input type="number" id="gross-salary" />
+            <input type="number" id="emp-ins" />
         </div>
         <div class="inner">
             <p>Canada Pension Plan %</p>
-            <input type="number" id="gross-salary" />
+            <input type="number" id="cpp" />
         </div>
     </div>
     <div class="outer">
@@ -53,7 +54,7 @@
             <input type="number" id="dependants" />
         </div>
     </div>
-    <button type="submit">Submit</button>
+    <button onclick="calc()">Submit</button>
 </body>
 
 </html>
