@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/home.scss" />
+    <link rel="stylesheet" href="./styles/home.css" />
     <title>Salary Slip</title>
 </head>
 
@@ -32,10 +32,28 @@
             <input type="number" id="gross-salary" />
         </div>
         <div class="inner">
-            <p>Allowance $</p>
+            <p>Employment Insurance %</p>
+            <input type="number" id="gross-salary" />
+        </div>
+        <div class="inner">
+            <p>Canada Pension Plan %</p>
             <input type="number" id="gross-salary" />
         </div>
     </div>
+    <div class="outer">
+        <div class="inner--gender">
+            <h3>Choose gender of employee</h3>
+            <input type="radio" id="man" name="gender" value="Man" />
+            <label for="man">Man</label>
+            <input type="radio" id="woman" name="gender" value="Woman" />
+            <label for="woman">Woman</label>
+        </div>
+        <div class="inner--dependants">
+            <h3>Choose number of dependants</h3>
+            <input type="number" id="dependants" />
+        </div>
+    </div>
+    <button type="submit">Submit</button>
 </body>
 
 </html>
