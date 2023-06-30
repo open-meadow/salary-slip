@@ -11,8 +11,11 @@ Apply conditions on dependants as for
 3 dependants deduction of 2 percentages
 4 dependants deduction of 4 percentages
 
-Apply conditions on Gender ( Male and Female)
-reate a salary slip 
+Apply conditions on Gender ( Male and Female) for female only we give deduction on I.Tex of 2 percentages
+
+-------------------------------------------
+
+Create a salary slip 
 
 Take gross salary from user 
 
