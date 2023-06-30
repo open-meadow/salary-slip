@@ -3,21 +3,33 @@ body {
   font-family: sans-serif;
   flex-direction: column;
   align-items: center;
-  border: 3px solid red;
   padding: 1em;
+  background-image: url(../images/pexels-monstera-6289029.jpg);
+  background-size: contain;
 }
 body .outer {
-  border: 3px solid blue;
+  background-color: floralwhite;
+  border-radius: 1rem;
   padding: 1em;
   width: 80%;
+  display: flex;
+  flex-direction: column;
 }
 body .outer--gs, body .outer--additions, body .outer--deductions, body .outer--gender, body .outer--dependants {
-  display: flex;
-  justify-content: flex-start;
-  padding-bottom: 1em;
+  margin: 1rem 0rem;
 }
-body .outer--gs p, body .outer--gs h3, body .outer--gs label, body .outer--additions p, body .outer--additions h3, body .outer--additions label, body .outer--deductions p, body .outer--deductions h3, body .outer--deductions label, body .outer--gender p, body .outer--gender h3, body .outer--gender label, body .outer--dependants p, body .outer--dependants h3, body .outer--dependants label {
-  padding-right: 1rem;
+body .outer--gs input, body .outer--additions input, body .outer--deductions input, body .outer--gender input, body .outer--dependants input {
+  width: 100%;
+}
+body .outer--gs #man, body .outer--gs #woman, body .outer--additions #man, body .outer--additions #woman, body .outer--deductions #man, body .outer--deductions #woman, body .outer--gender #man, body .outer--gender #woman, body .outer--dependants #man, body .outer--dependants #woman {
+  width: 2%;
+}
+body #submit {
+  background-color: rgb(126, 126, 255);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 1em;
 }
 
 /*# sourceMappingURL=home.css.map */

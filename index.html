@@ -67,15 +67,53 @@
           <input type="number" id="dependants" />
         </div>
       </div>
-      <button onclick="recieveValues()">Submit</button>
+      <button
+        type="button"
+        onclick="recieveValues()"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#answer"
+        id="submit"
+      >
+        Submit
+      </button>
     </div>
 
-    <hr />
-    <div class="answer">
-      <div id="gs-answer"></div>
-      <div id="additions-answer"></div>
-      <div id="deductions-answer"></div>
-      <div id="takeHomeSalary-answer"></div>
+    <div
+      class="modal fade"
+      id="answer"
+      tabindex="-1"
+      aria-labelledby="answerLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="answerLabel">Salary Slip</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="gs-answer"></div>
+            <div id="additions-answer"></div>
+            <div id="deductions-answer"></div>
+            <div id="takeHomeSalary-answer"></div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Bootstrap -->
