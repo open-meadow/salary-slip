@@ -1,13 +1,23 @@
 body {
   display: flex;
+  font-family: sans-serif;
   flex-direction: column;
   align-items: center;
   border: 3px solid red;
   padding: 1em;
 }
-body .inner {
+body .outer {
+  border: 3px solid blue;
+  padding: 1em;
+  width: 80%;
+}
+body .outer--gs, body .outer--additions, body .outer--deductions, body .outer--gender, body .outer--dependants {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
+  padding-bottom: 1em;
+}
+body .outer--gs p, body .outer--gs h3, body .outer--gs label, body .outer--additions p, body .outer--additions h3, body .outer--additions label, body .outer--deductions p, body .outer--deductions h3, body .outer--deductions label, body .outer--gender p, body .outer--gender h3, body .outer--gender label, body .outer--dependants p, body .outer--dependants h3, body .outer--dependants label {
+  padding-right: 1rem;
 }
 
 /*# sourceMappingURL=home.css.map */

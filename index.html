@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Import CSS and JS -->
     <link rel="stylesheet" href="./styles/home.css" />
     <script src="./scripts/calculation.js"></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <title>Salary Slip</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Salary Calculator</h1>
-    <div class="outer--first">
-        <p>Enter gross salary</p>
-        <input type="number" id="gross-salary" />
-    </div>
     <div class="outer">
+      <div>
+        <h2>Gross Salary</h2>
+        <div class="outer--gs">
+          <p>Enter gross salary</p>
+          <input type="number" id="gross-salary" />
+        </div>
+      </div>
+      <div>
         <h2>Additions in Dollars:</h2>
-        <div class="inner">
-            <p>Bonus $</p>
-            <input type="number" id="bonus" />
+        <div class="outer--additions">
+          <p>Bonus $</p>
+          <input type="number" id="bonus" />
         </div>
-        <div class="inner">
-            <p>Allowance $</p>
-            <input type="number" id="allowance" />
+        <div class="outer--additions">
+          <p>Allowance $</p>
+          <input type="number" id="allowance" />
         </div>
-    </div>
-    <div class="outer">
+      </div>
+      <div>
         <h2>Deductions in Percentage:</h2>
-        <div class="inner">
-            <p>Income Tax %</p>
-            <input type="number" id="income-tax" />
+        <div class="outer--deductions">
+          <p>Income Tax %</p>
+          <input type="number" id="income-tax" />
         </div>
-        <div class="inner">
-            <p>Employment Insurance %</p>
-            <input type="number" id="emp-ins" />
+        <div class="outer--deductions">
+          <p>Employment Insurance %</p>
+          <input type="number" id="emp-ins" />
         </div>
-        <div class="inner">
-            <p>Canada Pension Plan %</p>
-            <input type="number" id="cpp" />
+        <div class="outer--deductions">
+          <p>Canada Pension Plan %</p>
+          <input type="number" id="cpp" />
         </div>
-    </div>
-    <div class="outer">
-        <div class="inner--gender">
-            <h3>Choose gender of employee</h3>
+      </div>
+      <div>
+        <div>
+          <h3>Choose gender of employee</h3>
+          <div class="outer--gender">
             <input type="radio" id="man" name="gender" value="Man" />
             <label for="man">Man</label>
             <input type="radio" id="woman" name="gender" value="Woman" />
             <label for="woman">Woman</label>
+          </div>
         </div>
-        <div class="inner--dependants">
-            <h3>Choose number of dependants</h3>
-            <input type="number" id="dependants" />
+        <div class="outer--dependants">
+          <h3>Choose number of dependants</h3>
+          <input type="number" id="dependants" />
         </div>
+      </div>
+      <button onclick="recieveValues()">Submit</button>
     </div>
-    <button onclick="recieveValues()">Submit</button>
+
     <hr />
     <div class="answer">
-        <div id="gs-answer"></div>
-        <div id="additions-answer"></div>
-        <div id="deductions-answer"></div>
-        <div id="takeHomeSalary-answer"></div>
+      <div id="gs-answer"></div>
+      <div id="additions-answer"></div>
+      <div id="deductions-answer"></div>
+      <div id="takeHomeSalary-answer"></div>
     </div>
-</body>
 
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
